@@ -1,8 +1,14 @@
+// ? components
+
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { MainContainer } from "@/components/MainContainer";
+
 export default function Home() {
   return (
-    <>
-      <h1>Projeto: Resid</h1>
-      <p>ok</p>
-    </>
+    <MainContainer headerPageTitle="Teste">
+      <Header />
+      <Hero />
+    </MainContainer>
   );
 }

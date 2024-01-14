@@ -1,27 +1,46 @@
+import theme from "@/styles/theme";
 import Link from "next/link";
 import styled, { css } from "styled-components";
 
 const SameButtonCss = css`
   width: fit-content;
   transition: 0.2s;
-  padding: 5px 10px;
-  border-radius: 8px;
-  background: ${({ theme }) => theme.COLORS.GREEN_500};
-
-  &.danger {
-    background: ${({ theme }) => theme.COLORS.RED};
+  padding: 1.5rem 1.8rem;
+  border-radius: 0.8rem;
+  background: ${theme.colors.blue};
+  font-weight: 600;
+  color: ${theme.colors.white};
+  > svg {
+    margin-right: 1rem;
+    font-size: ${theme.font_size.md};
   }
-  &.warning {
-    background: ${({ theme }) => theme.COLORS.GRAY_300};
+  &.white {
+    background: ${({ theme }) => theme.colors.white};
+    color: ${theme.colors.text_blue};
+  }
+  &.outline {
+    background: transparent;
+    color: ${theme.colors.text};
+    border: 2px solid ${theme.colors.black};
+  }
+  &.black {
+    background: ${theme.colors.black};
+    color: ${theme.colors.white};
   }
   &:hover {
-    background: ${({ theme }) => theme.COLORS.GREEN_700};
+    background: ${theme.colors.blue_effect};
 
-    &.danger {
-      background: ${({ theme }) => theme.COLORS.RED_DARK};
+    &.white {
+      background: ${({ theme }) => theme.colors.black};
+      color: ${theme.colors.white};
     }
-    &.warning {
-      background: ${({ theme }) => theme.COLORS.GRAY_500};
+    &.outline {
+      background: ${theme.colors.black};
+      color: ${theme.colors.white};
+    }
+    &.black {
+      background: ${theme.colors.blue};
+      color: ${theme.colors.white};
     }
   }
 `;

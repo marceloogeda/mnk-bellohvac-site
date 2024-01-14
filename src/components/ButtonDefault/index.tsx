@@ -1,24 +1,24 @@
-import { ReactNode } from "react";
+import { LuCalendar } from "react-icons/lu";
 
 // ? styles
 import * as Styles from "./styles";
-import { colorType } from "./styles";
 
 interface ButtonDefaultProps {
-  children: ReactNode;
-  hasStyleButtonType?: colorType;
+  hasStyleButtonType?: "white" | "outline" | "black";
+  includeIcon?: boolean;
   isLink?: boolean;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
   url?: string;
+  content: string;
   disabled?: boolean;
   target?: "_blank" | "_parent" | "_self" | "_top";
   title?: string;
 }
 
 export function ButtonDefault({
-  children,
   onClick,
+  includeIcon,
   hasStyleButtonType,
   isLink,
   target,
@@ -26,6 +26,7 @@ export function ButtonDefault({
   url,
   type,
   title,
+  content,
 }: ButtonDefaultProps) {
   return (
     <>
@@ -37,7 +38,7 @@ export function ButtonDefault({
           title={title}
           className={hasStyleButtonType}
         >
-          {children}
+          {includeIcon && <LuCalendar />} {content}
         </Styles.ButtonLinkContainer>
       )}
 
@@ -48,7 +49,7 @@ export function ButtonDefault({
           disabled={disabled}
           className={hasStyleButtonType}
         >
-          {children}
+          {includeIcon && <LuCalendar />} {content}
         </Styles.ButtonDefaultContainer>
       )}
     </>

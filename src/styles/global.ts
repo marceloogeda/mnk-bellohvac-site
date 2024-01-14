@@ -4,7 +4,7 @@ import { createGlobalStyle, css } from "styled-components";
 
 const IconsCss = css`
   font:
-    400 1.6rem Montserrat,
+    400 1.4rem Inter,
     sans-serif;
   border: none;
   outline: none;
@@ -103,13 +103,13 @@ a{
 
 
 ::-webkit-scrollbar-track {
-    background: ${({ theme }) => theme.COLORS.GRAY_100};
+    background: ${({ theme }) => theme.colors.gray_100};
 }
 
 
 ::-webkit-scrollbar-thumb {
     
-    background: ${({ theme }) => theme.COLORS.GRAY_400};
+    background: ${({ theme }) => theme.colors.gray_400};
     border-radius: 5px;
 }
 

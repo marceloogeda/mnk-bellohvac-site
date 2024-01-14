@@ -3,7 +3,6 @@ import { ReactNode } from "react";
 import Head from "next/head";
 
 // ? components
-import { ButtonBack } from "../ButtonBack";
 import { ButtonBackToTop } from "../ButtonBackToTop";
 
 // ? styles
@@ -32,7 +31,7 @@ export function MainContainer({
   return (
     <>
       <Head>
-        <title>{headerPageTitle} | Estudos JS </title>
+        <title>{headerPageTitle} | Bellohvac </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content={keywords || ""} />
         <meta
@@ -58,7 +57,7 @@ export function MainContainer({
         )}
       </Head>
       <Styles.Container>
-        <ButtonBack />
+        {/* <ButtonBack /> */}
         <Styles.Content>{children}</Styles.Content>
       </Styles.Container>
       <ButtonBackToTop />

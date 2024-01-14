@@ -9,13 +9,13 @@ const btnStyles = css`
   border-radius: 10px;
   margin-top: 4rem;
   font-weight: 500;
-  color: ${(props) => props.theme.COLORS.GRAY_300} !important;
+  color: ${(props) => props.theme.colors.gray_300} !important;
   text-decoration: none;
-  background: ${(props) => props.theme.COLORS.GRAY_300};
+  background: ${(props) => props.theme.colors.gray_300};
   width: fit-content;
   &:hover {
-    color: ${(props) => props.theme.COLORS.GRAY_300};
-    background: ${(props) => props.theme.COLORS.RED};
+    color: ${(props) => props.theme.colors.gray_300};
+    background: ${(props) => props.theme.colors.red};
   }
   &.xs {
     padding: 0.6rem 1.7rem;
@@ -33,14 +33,14 @@ const btnStyles = css`
     border-radius: 12px;
   }
   .outline {
-    border: 1px solid ${(props) => props.theme.COLORS.GRAY_300};
-    background-color: 1px solid ${(props) => props.theme.COLORS.RED};
+    border: 1px solid ${(props) => props.theme.colors.gray_300};
+    background-color: 1px solid ${(props) => props.theme.colors.red};
   }
   &:disabled,
   &.disabled,
   &.disabled:hover {
-    background-color: ${(props) => props.theme.COLORS.RED};
-    color: ${(props) => props.theme.COLORS.GRAY_300};
+    background-color: ${(props) => props.theme.colors.red};
+    color: ${(props) => props.theme.colors.gray_300};
     cursor: no-drop;
   }
 `;

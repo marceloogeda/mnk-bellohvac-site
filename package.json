@@ -1,0 +1,29 @@
+{
+  "name": "resid",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src --ext .ts,.tsx --fix"
+  },
+  "dependencies": {
+    "next": "13.5.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "react-use": "^17.4.0",
+    "styled-components": "^6.1.0"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/styled-components": "^5.1.29",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.5",
+    "typescript": "^5"
+  }
+}

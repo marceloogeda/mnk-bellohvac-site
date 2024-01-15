@@ -50,7 +50,12 @@ export const Content = styled.div`
 
   > button {
     margin-left: auto;
+    display: inline;
   }
 `;
 
-export const HeaderLogoContent = styled.div``;
+export const HeaderLogoContent = styled.div`
+  h1 {
+    margin-top: 20px;
+  }
+`;

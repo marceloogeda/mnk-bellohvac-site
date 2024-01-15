@@ -17,7 +17,7 @@ export function Header() {
         <Styles.HeaderLogoContent>
           <h1>
             <ActiveLink href="/">
-              <Image src={SectionBanner} alt="" height={55} width={146} />
+              <Image src={SectionBanner} alt="" height={56.17} width={144} />
             </ActiveLink>
           </h1>
         </Styles.HeaderLogoContent>

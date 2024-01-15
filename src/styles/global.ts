@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from "styled-components";
+import theme from "./theme";
 
 // ? types
 
@@ -47,8 +48,13 @@ select{
 }
 
 h2 {
-    font-size: 3.2rem;
-    font-weight: bold;
+    font-size: ${theme.font_size.xl6};
+    font-weight: 800;
+}
+
+p{
+    font-size:  ${theme.font_size.sm};
+    line-height: 1.6;
 }
 
 h4.article-title{

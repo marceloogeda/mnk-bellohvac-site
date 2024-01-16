@@ -31,6 +31,7 @@ export const Content = styled.div`
       justify-content: center;
       align-items: center;
       gap: 3.5rem;
+      color: ${theme.colors.text_title};
       li,
       button {
         font-size: ${theme.font_size.sm};
@@ -50,7 +51,6 @@ export const Content = styled.div`
 
   > button {
     margin-left: auto;
-    display: inline;
   }
 `;
 

@@ -47,12 +47,25 @@ select{
     ${IconsCss}
 }
 
-h2 {
+h1 {
     font-size: ${theme.font_size.xl6};
     font-weight: 800;
 }
+h2 {
+    font-size: ${theme.font_size.xl3};
+    font-weight: 800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: ${theme.colors.text_title};
+}
 
 p{
+    color: ${theme.colors.text};
     font-size:  ${theme.font_size.sm};
     line-height: 1.6;
 }

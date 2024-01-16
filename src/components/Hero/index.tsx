@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // ? image
 import SectionBannerHero from "@/assets/images/Header-photo-medium.jpg";
+import CheckBox from "@/assets/images/svgs/check-box.svg";
 // ? components
 import { ButtonDefault } from "../ButtonDefault";
 // ? styles
@@ -31,9 +32,9 @@ export function Hero() {
           <SwiperSlide>
             <Styles.HeroContainer>
               <div className="content">
-                <h2>
+                <h1>
                   Your Coolest <br /> Choice for HVAC
-                </h2>
+                </h1>
 
                 <p>
                   Where comfort meets cool business in Boston, MA and Charlotte,
@@ -50,7 +51,12 @@ export function Hero() {
                 </div>
               </div>
               <div className="banner-image">
-                <Image src={SectionBannerHero} alt="" />
+                <Image
+                  src={SectionBannerHero}
+                  alt=""
+                  width={571}
+                  height={710}
+                />
               </div>
             </Styles.HeroContainer>
           </SwiperSlide>
@@ -76,7 +82,12 @@ export function Hero() {
                 </div>
               </div>
               <div className="banner-image">
-                <Image src={SectionBannerHero} alt="" />
+                <Image
+                  src={SectionBannerHero}
+                  alt=""
+                  width={571}
+                  height={710}
+                />
               </div>
             </Styles.HeroContainer>
           </SwiperSlide>
@@ -102,7 +113,12 @@ export function Hero() {
                 </div>
               </div>
               <div className="banner-image">
-                <Image src={SectionBannerHero} alt="" />
+                <Image
+                  src={SectionBannerHero}
+                  alt=""
+                  width={571}
+                  height={710}
+                />
               </div>
             </Styles.HeroContainer>
           </SwiperSlide>
@@ -128,13 +144,61 @@ export function Hero() {
                 </div>
               </div>
               <div className="banner-image">
-                <Image src={SectionBannerHero} alt="" />
+                <Image
+                  src={SectionBannerHero}
+                  alt=""
+                  width={571}
+                  height={710}
+                />
               </div>
             </Styles.HeroContainer>
           </SwiperSlide>
         </Swiper>
 
-        <Styles.CardContainer></Styles.CardContainer>
+        <Styles.CardContainer>
+          <div className="card-item">
+            <h4>
+              {" "}
+              <Image
+                src={CheckBox}
+                width={25}
+                height={25}
+                alt=""
+              /> Support{" "}
+            </h4>
+            <p>Our support, your comfort. Fast and reliable attendance.</p>
+          </div>
+          <div className="card-item">
+            <h4>
+              {" "}
+              <Image src={CheckBox} width={25} height={25} alt="" />{" "}
+              Profissionals{" "}
+            </h4>
+            <p>
+              Experienced Professionals, Expert Solutions. Trust our seasoned
+              team.
+            </p>
+          </div>
+          <div className="card-item">
+            <h4>
+              {" "}
+              <Image src={CheckBox} width={25} height={25} alt="" /> Our Reach{" "}
+            </h4>
+            <p>
+              Proudly serving Boston, MA, and Charlotte, NC. Just a call away.
+            </p>
+          </div>
+          <div className="card-item">
+            <h4>
+              {" "}
+              <Image src={CheckBox} width={25} height={25} alt="" /> Total
+              Coverage{" "}
+            </h4>
+            <p>
+              Any home. Any commercial building. Elevating comfort everywhere.
+            </p>
+          </div>
+        </Styles.CardContainer>
       </Styles.Container>
     </>
   );

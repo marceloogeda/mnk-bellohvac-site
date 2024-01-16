@@ -39,6 +39,11 @@ export const HeroContainer = styled.div`
 
     margin: 0 auto;
     z-index: 1;
+
+    h2,
+    p {
+      color: ${theme.colors.text_title};
+    }
     p {
       font-size: ${theme.font_size.md};
     }
@@ -60,14 +65,31 @@ export const HeroContainer = styled.div`
 export const CardContainer = styled.div`
   position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(-50%, 0%);
+
+  align-items: flex-start;
+  justify-content: space-between;
+  transform: translate(-49.58%, 0%);
   z-index: 9999;
   left: 50%;
-  height: 17.3rem;
+  flex-wrap: nowrap;
+  overflow: auto;
   width: ${theme.container_desktop};
+  min-height: 17.3rem;
+  gap: 8rem;
+  margin-top: calc(-17.3rem / 2);
+  padding: 4rem;
+
   background: ${theme.colors.white};
   box-shadow: ${theme.box_shadow};
-  margin-top: calc(-17.3rem / 2);
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    h4 {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: ${theme.font_size.xl};
+    }
+  }
 `;

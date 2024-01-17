@@ -56,6 +56,13 @@ h2 {
     font-weight: 800;
 }
 
+h4 {
+    font-size: ${theme.font_size.md};
+    font-weight: 500;
+}
+
+
+
 h1,
 h2,
 h3,
@@ -70,9 +77,14 @@ p{
     line-height: 1.6;
 }
 
-h4.article-title{
-    font-size: 1.4rem;
-}
+strong {
+      font-weight: 600;
+      font-size: ${theme.font_size.md};
+      color: ${theme.colors.text_blue};
+    }
+
+
+
 
 button{
     cursor: pointer;

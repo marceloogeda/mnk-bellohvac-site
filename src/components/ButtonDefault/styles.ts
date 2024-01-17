@@ -13,8 +13,8 @@ const SameButtonCss = css`
   background: ${theme.colors.blue};
   font-weight: 600;
   color: ${theme.colors.white};
+  gap: 1.5rem;
   > svg {
-    margin-right: 1rem;
     font-size: ${theme.font_size.md};
   }
   &.white {
@@ -31,6 +31,24 @@ const SameButtonCss = css`
     background: ${theme.colors.black};
     color: ${theme.colors.white};
   }
+  &.link-blue {
+    background: transparent;
+    padding: 1.5rem 0rem;
+    gap: 1rem;
+    color: ${theme.colors.text_blue};
+    > svg {
+      color: ${theme.colors.text_blue};
+    }
+  }
+  &.link-white {
+    background: transparent;
+    padding: 1.5rem 0rem;
+    gap: 1rem;
+    color: ${theme.colors.white};
+    > svg {
+      color: ${theme.colors.white};
+    }
+  }
   &:hover {
     background: ${theme.colors.blue_effect};
 
@@ -45,6 +63,15 @@ const SameButtonCss = css`
     &.black {
       background: ${theme.colors.blue};
       color: ${theme.colors.white};
+    }
+
+    &.link-blue {
+      background: transparent;
+      gap: 1.5rem;
+      color: ${theme.colors.text_blue_effect};
+      > svg {
+        color: ${theme.colors.text_blue_effect};
+      }
     }
   }
 `;

@@ -52,7 +52,7 @@ export default {
     xl: "1280px",
     xs: "1536px",
   },
-  container_desktop: "min(144rem, 90vw)",
+  container_desktop: "min(130rem, 90vw)",
   border_radios: "0px",
   transition: "0.2s ease",
   box_shadow: "0px 1px 5px #00000029",

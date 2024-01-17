@@ -3,8 +3,6 @@ import Image from "next/image";
 // ? image
 import SectionBanner from "@/assets/images/top-building.jpg";
 
-// ? components
-
 // ? styles
 import * as Styles from "./styles";
 

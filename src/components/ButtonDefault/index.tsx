@@ -1,11 +1,13 @@
+import { FaArrowRight } from "react-icons/fa6";
 import { LuCalendar } from "react-icons/lu";
 
 // ? styles
 import * as Styles from "./styles";
 
 interface ButtonDefaultProps {
-  hasStyleButtonType?: "white" | "outline" | "black";
+  hasStyleButtonType?: "white" | "outline" | "black" | "link-blue";
   includeIcon?: boolean;
+  includeArrow?: boolean;
   isLink?: boolean;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
@@ -19,6 +21,7 @@ interface ButtonDefaultProps {
 export function ButtonDefault({
   onClick,
   includeIcon,
+  includeArrow,
   hasStyleButtonType,
   isLink,
   target,
@@ -38,7 +41,8 @@ export function ButtonDefault({
           title={title}
           className={hasStyleButtonType}
         >
-          {includeIcon && <LuCalendar />} {content}
+          {includeIcon && <LuCalendar />} {content}{" "}
+          {includeArrow && <FaArrowRight />}
         </Styles.ButtonLinkContainer>
       )}
 
@@ -49,7 +53,8 @@ export function ButtonDefault({
           disabled={disabled}
           className={hasStyleButtonType}
         >
-          {includeIcon && <LuCalendar />} {content}
+          {includeIcon && <LuCalendar />} {content}{" "}
+          {includeArrow && <FaArrowRight />}
         </Styles.ButtonDefaultContainer>
       )}
     </>

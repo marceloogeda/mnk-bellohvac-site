@@ -8,7 +8,7 @@ export const Container = styled.div`
     height: 0.8rem;
     top: 550px;
     left: 50%;
-    transform: translate(calc(-50% - 29.2vw), 0);
+    transform: translate(calc(-50% - 25.5vw), 0);
     border-radius: 100px;
     background: ${theme.colors.white};
 

@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
   experimental: {
     nextScriptWorkers: false,
@@ -9,42 +10,22 @@ const nextConfig = {
   },
   images: {
     domains: ["localhost"],
-    remotePatterns: [
-      {
-        protocol: "http",
-        hostname: "localhost",
-        port: "1337",
-        pathname: "/uploads/**",
-      },
-      {
-        protocol: "http",
-        hostname: "127.0.0.1",
-        port: "1337",
-        pathname: "/uploads/**",
-      },
-    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "http",
+    //     hostname: "localhost",
+    //     port: "1337",
+    //     pathname: "/uploads/**",
+    //   },
+    //   {
+    //     protocol: "http",
+    //     hostname: "127.0.0.1",
+    //     port: "1337",
+    //     pathname: "/uploads/**",
+    //   },
+    // ],
+    unoptimized: true,
   },
-  //   images: {
-  //   domains: ['https://ghosttest-valter.ghost.io'],
-  // },
-
-  // images: {
-  //   remotePatterns: [
-  //     {
-  //       protocol: 'https',
-  //       hostname: 'ghosttest-valter.ghost.io',
-  //     },
-  //   ],
-  // },
-
-  // headers: async () => {
-  //   return [
-  //     {
-  //       source: '/api/:path*',
-  //       headers: [{ key: 'Access-Control-Allow-Origin', value: '*' }],
-  //     },
-  //   ]
-  // },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.

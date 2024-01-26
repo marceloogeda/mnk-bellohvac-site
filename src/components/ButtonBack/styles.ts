@@ -13,7 +13,7 @@ export const Container = styled.button<ButtonPostType>`
     align-items: center;
     transition: 0.2s;
     gap: 1rem;
-    color: ${({ theme }) => theme.COLORS.RED};
+    color: ${({ theme }) => theme.colors.red};
     font-size: 1.4rem;
     font-weight: 400;
     transform: translateX(0) !important;
@@ -28,14 +28,14 @@ export const Container = styled.button<ButtonPostType>`
         padding: 1rem;
         border-radius: 50%;
 
-        background: ${({ theme }) => theme.COLORS.GRAY_700};
+        background: ${({ theme }) => theme.colors.gray_700};
         > svg {
           font-size: 1.5rem;
-          color: ${({ theme }) => theme.COLORS.WHITE};
+          color: ${({ theme }) => theme.colors.white};
         }
       }
       &:nth-child(2) {
-        color: ${({ theme }) => theme.COLORS.GRAY_700};
+        color: ${({ theme }) => theme.colors.gray_700};
         font-weight: 600;
       }
     }
@@ -44,13 +44,13 @@ export const Container = styled.button<ButtonPostType>`
       > span {
         transition: 0.2s;
         &:nth-child(1) {
-          background: ${({ theme }) => theme.COLORS.GREEN_500};
+          background: ${({ theme }) => theme.colors.green_500};
           > svg {
-            color: ${({ theme }) => theme.COLORS.RED};
+            color: ${({ theme }) => theme.colors.red};
           }
         }
         &:nth-child(2) {
-          color: ${({ theme }) => theme.COLORS.GREEN_500};
+          color: ${({ theme }) => theme.colors.green_500};
           font-weight: 600;
         }
       }

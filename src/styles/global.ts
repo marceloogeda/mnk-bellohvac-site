@@ -1,10 +1,11 @@
 import { createGlobalStyle, css } from "styled-components";
+import theme from "./theme";
 
 // ? types
 
 const IconsCss = css`
   font:
-    400 1.6rem Montserrat,
+    400 1.4rem Inter,
     sans-serif;
   border: none;
   outline: none;
@@ -46,14 +47,44 @@ select{
     ${IconsCss}
 }
 
+h1 {
+    font-size: ${theme.font_size.xl6};
+    font-weight: 800;
+}
 h2 {
-    font-size: 3.2rem;
-    font-weight: bold;
+    font-size: ${theme.font_size.xl3};
+    font-weight: 800;
 }
 
-h4.article-title{
-    font-size: 1.4rem;
+h4 {
+    font-size: ${theme.font_size.md};
+    font-weight: 500;
 }
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: ${theme.colors.text_title};
+}
+
+p{
+    color: ${theme.colors.text};
+    font-size:  ${theme.font_size.sm};
+    line-height: 1.6;
+}
+
+strong {
+      font-weight: 600;
+      font-size: ${theme.font_size.md};
+      color: ${theme.colors.text_blue};
+    }
+
+
+
 
 button{
     cursor: pointer;
@@ -103,13 +134,13 @@ a{
 
 
 ::-webkit-scrollbar-track {
-    background: ${({ theme }) => theme.COLORS.GRAY_100};
+    background: ${({ theme }) => theme.colors.gray_100};
 }
 
 
 ::-webkit-scrollbar-thumb {
     
-    background: ${({ theme }) => theme.COLORS.GRAY_400};
+    background: ${({ theme }) => theme.colors.gray_400};
     border-radius: 5px;
 }
 

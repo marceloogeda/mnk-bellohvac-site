@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src --ext .ts,.tsx --fix"
+    "lint": "eslint src --ext .ts,.tsx --fix",
+    "predeploy": "yarn build && firebase login:use marcelo@moonkey.com.br",
+    "deploy": "firebase deploy --only hosting"
   },
   "dependencies": {
     "next": "13.5.5",

@@ -1,5 +1,6 @@
 // ? components
 
+// import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { MainContainer } from "@/components/MainContainer";
@@ -34,6 +35,8 @@ export default function Home() {
       <SectionSustainable />
       {/* sessão 9 */}
       <SectionClientTestimonials />
+      {/* sessão 10 */}
+      {/* <Footer /> */}
     </MainContainer>
   );
 }

@@ -6,6 +6,8 @@ import { MainContainer } from "@/components/MainContainer";
 import { SectionArticles } from "@/components/SectionArticles";
 import { SectionBelloHvac } from "@/components/SectionBelloHvac";
 import { SectionBrands } from "@/components/SectionBrands";
+import { SectionClientTestimonials } from "@/components/SectionClientTestimonials";
+import { SectionHvacServices } from "@/components/SectionHvacServices";
 import { SectionKnowMore } from "@/components/SectionKnowMore";
 import { SectionManutence } from "@/components/SectionManutence";
 import { SectionSustainable } from "@/components/SectionSustainable";
@@ -27,7 +29,11 @@ export default function Home() {
       {/* sessão 5 */}
       <SectionKnowMore />
       {/* sessão 7 */}
+      <SectionHvacServices />
+      {/* sessão 8 */}
       <SectionSustainable />
+      {/* sessão 9 */}
+      <SectionClientTestimonials />
     </MainContainer>
   );
 }

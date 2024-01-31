@@ -3,6 +3,7 @@ export default {
     white: "#ffffff",
 
     blue: "#028ecd",
+    blue_dark: "#0B004C",
     blue_effect: "#015c86",
 
     green_700: "#00875f",
@@ -16,7 +17,7 @@ export default {
     gray_500: "#29292e",
     gray_400: "#323238",
     gray_300: "#7c7c8a",
-    gray_200: "#c4c4cc",
+    gray_200: "#B6B6B6",
     gray_100: "#dbd9e2",
 
     black: "#3f3439",

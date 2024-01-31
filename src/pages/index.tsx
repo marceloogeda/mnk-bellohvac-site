@@ -1,6 +1,6 @@
 // ? components
 
-// import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { MainContainer } from "@/components/MainContainer";
@@ -11,6 +11,7 @@ import { SectionClientTestimonials } from "@/components/SectionClientTestimonial
 import { SectionHvacServices } from "@/components/SectionHvacServices";
 import { SectionKnowMore } from "@/components/SectionKnowMore";
 import { SectionManutence } from "@/components/SectionManutence";
+import { SectionStayCool } from "@/components/SectionStayCool";
 import { SectionSustainable } from "@/components/SectionSustainable";
 
 export default function Home() {
@@ -36,7 +37,9 @@ export default function Home() {
       {/* sessão 9 */}
       <SectionClientTestimonials />
       {/* sessão 10 */}
-      {/* <Footer /> */}
+      <SectionStayCool />
+      {/* sessão 11 */}
+      <Footer />
     </MainContainer>
   );
 }

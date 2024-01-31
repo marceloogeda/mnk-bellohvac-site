@@ -14,6 +14,8 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
   width: ${theme.container_desktop};
   .footer-container {
     display: flex;
@@ -103,6 +105,23 @@ export const Content = styled.div`
           gap: 0.8rem;
         }
       }
+    }
+  }
+
+  footer {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-size: ${theme.font_size.xs};
+      color: ${theme.colors.white};
+    }
+
+    .logo-agency {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 `;

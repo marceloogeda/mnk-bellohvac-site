@@ -1,4 +1,5 @@
 import LogoWhite from "@/assets/images/logo-bellohvac-white.png";
+import LogoMonkey from "@/assets/images/logo-composed-white.png";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -130,7 +131,15 @@ export function Footer() {
             </form>
           </div>
         </div>
-        <footer></footer>
+        <footer>
+          <span>
+            © Bello HVAC. All Rights Reserved {new Date().getFullYear()}.
+          </span>
+          <div className="logo-agency">
+            <span>Made by</span>
+            <Image src={LogoMonkey} alt="" height={28} width={110} />
+          </div>
+        </footer>
       </Styles.Content>
     </Styles.Container>
   );

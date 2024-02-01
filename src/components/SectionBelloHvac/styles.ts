@@ -5,8 +5,11 @@ export const ContainerSectionBelloHvac = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 823px;
+
   padding: 151px 70px 57px 70px;
+  @media screen and (max-width: ${(props) => props.theme.rules.lg}) {
+    padding: 151px 0px 57px 0px;
+  }
 `;
 
 export const Content = styled.div`
@@ -45,6 +48,33 @@ export const Content = styled.div`
     .button-container {
       display: flex;
       gap: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.lg}) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .banner-image {
+      width: 100%;
+      height: 400px;
+      align-items: end;
+      margin-top: 100px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .description {
+      max-width: unset;
+      h2,
+      p {
+        br {
+          display: none;
+        }
+      }
     }
   }
 `;

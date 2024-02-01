@@ -6,6 +6,9 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   padding: 4rem 0;
+  @media screen and (max-width: ${(props) => props.theme.rules.md}) {
+    padding: 0 0 8rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -37,6 +40,16 @@ export const Content = styled.div`
           flex-direction: column;
           gap: 1.6rem;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.md}) {
+    .banner-image {
+      width: 90vw;
+      img {
+        width: 100%;
+        object-fit: contain;
       }
     }
   }

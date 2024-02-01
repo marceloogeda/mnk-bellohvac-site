@@ -124,4 +124,13 @@ export const Content = styled.div`
       gap: 1rem;
     }
   }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.md}) {
+    .footer-container {
+      .footer-content {
+        flex-direction: column-reverse;
+        gap: 8rem;
+      }
+    }
+  }
 `;

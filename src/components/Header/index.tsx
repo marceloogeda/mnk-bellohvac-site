@@ -1,3 +1,6 @@
+import { useState } from "react";
+
+// ? images
 import Image from "next/image";
 
 import SectionBanner from "@/assets/images/logo-bellohvac.png";
@@ -11,6 +14,8 @@ import { ButtonDefault } from "../ButtonDefault";
 import * as Styles from "./styles";
 
 export function Header() {
+  const [activeButtonHamburguer, setActiveButtonHamburguer] =
+    useState<boolean>(false);
   return (
     <Styles.Container>
       <Styles.Content>
@@ -21,7 +26,7 @@ export function Header() {
             </ActiveLink>
           </h1>
         </Styles.HeaderLogoContent>
-        <nav>
+        <nav className={activeButtonHamburguer ? "active" : ""}>
           <ul>
             <li>
               <ActiveLink href={""}>
@@ -49,9 +54,29 @@ export function Header() {
                 <>About</>
               </ActiveLink>
             </li>
+            <li>
+              <ButtonDefault
+                className="mobile-button"
+                content="Schedule Service"
+                includeIcon
+              />
+            </li>
           </ul>
         </nav>
         <ButtonDefault content="Schedule Service" includeIcon />
+
+        <Styles.HamburgerButton
+          onClick={() => {
+            setActiveButtonHamburguer(!activeButtonHamburguer);
+            // setActiveButtonLink(null);
+            // setActiveButtonSearch(false);
+          }}
+          className={activeButtonHamburguer ? "active" : ""}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </Styles.HamburgerButton>
       </Styles.Content>
     </Styles.Container>
   );

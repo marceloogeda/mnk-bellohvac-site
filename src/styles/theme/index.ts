@@ -50,7 +50,7 @@ export default {
     sm: "640px",
     md: "960px",
     lg: "1024px",
-    xl: "1280px",
+    xl: "1440px",
     xs: "1536px",
   },
   container_desktop: "min(130rem, 90vw)",

@@ -15,7 +15,8 @@ const SameButtonCss = css`
   color: ${theme.colors.white};
   gap: 1.5rem;
   > svg {
-    font-size: ${theme.font_size.md};
+    font-size: ${theme.font_size.md} !important;
+    min-width: ${theme.font_size.md} !important;
   }
   &.white {
     background: ${({ theme }) => theme.colors.white};
@@ -29,6 +30,7 @@ const SameButtonCss = css`
   }
   &.black {
     background: ${theme.colors.black};
+    border: 2px solid ${theme.colors.black};
     color: ${theme.colors.white};
   }
   &.link-blue {
@@ -61,8 +63,8 @@ const SameButtonCss = css`
       color: ${theme.colors.white};
     }
     &.black {
-      background: ${theme.colors.blue};
-      color: ${theme.colors.white};
+      background: ${theme.colors.white};
+      color: ${theme.colors.text};
     }
 
     &.link-blue {
@@ -71,6 +73,42 @@ const SameButtonCss = css`
       color: ${theme.colors.text_blue_effect};
       > svg {
         color: ${theme.colors.text_blue_effect};
+      }
+    }
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.md}) {
+    &:hover {
+      background: ${theme.colors.blue};
+
+      &.white {
+        background: ${({ theme }) => theme.colors.white};
+        color: ${theme.colors.text_blue};
+      }
+      &.outline {
+        background: transparent;
+        color: ${theme.colors.text};
+      }
+      &.black {
+        background: ${theme.colors.black};
+        color: ${theme.colors.white};
+      }
+      &.link-blue {
+        background: transparent;
+        padding: 1.5rem 0rem;
+        gap: 1rem;
+        color: ${theme.colors.text_blue};
+        > svg {
+          color: ${theme.colors.text_blue};
+        }
+      }
+      &.link-white {
+        background: transparent;
+
+        color: ${theme.colors.white};
+        > svg {
+          color: ${theme.colors.white};
+        }
       }
     }
   }

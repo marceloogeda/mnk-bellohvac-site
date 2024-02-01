@@ -62,4 +62,30 @@ export const Content = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.md}) {
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 5rem;
+      a {
+        margin-left: unset;
+      }
+    }
+    .content-item {
+      .item {
+        display: flex;
+        flex-direction: column;
+        img {
+          margin: 0 auto;
+        }
+        .item-description {
+          h3 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 `;

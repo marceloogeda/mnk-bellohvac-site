@@ -8,6 +8,7 @@ interface ButtonDefaultProps {
   hasStyleButtonType?: "white" | "outline" | "black" | "link-blue";
   includeIcon?: boolean;
   includeArrow?: boolean;
+  className?: string;
   isLink?: boolean;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
@@ -23,6 +24,7 @@ export function ButtonDefault({
   includeIcon,
   includeArrow,
   hasStyleButtonType,
+  className,
   isLink,
   target,
   disabled,
@@ -39,7 +41,7 @@ export function ButtonDefault({
           onClick={onClick}
           target={target}
           title={title}
-          className={hasStyleButtonType}
+          className={`${hasStyleButtonType} ${className}`}
         >
           {includeIcon && <LuCalendar />} {content}{" "}
           {includeArrow && <FaArrowRight />}
@@ -51,7 +53,7 @@ export function ButtonDefault({
           onClick={onClick}
           type={type}
           disabled={disabled}
-          className={hasStyleButtonType}
+          className={`${hasStyleButtonType} ${className}`}
         >
           {includeIcon && <LuCalendar />} {content}{" "}
           {includeArrow && <FaArrowRight />}

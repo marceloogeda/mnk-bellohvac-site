@@ -6,6 +6,10 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   height: 747px;
+  @media screen and (max-width: ${(props) => props.theme.rules.sm}) {
+    height: unset;
+    padding: 8rem 0;
+  }
 `;
 
 export const Content = styled.article`
@@ -18,10 +22,22 @@ export const Content = styled.article`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    .banner-image {
+      width: 100%;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
     .description {
       display: flex;
       flex-direction: column;
       gap: 2rem;
     }
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.sm}) {
+    flex-direction: column;
   }
 `;

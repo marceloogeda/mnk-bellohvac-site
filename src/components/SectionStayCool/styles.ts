@@ -7,6 +7,15 @@ export const Container = styled.section`
   justify-content: center;
   flex-direction: column;
   gap: 5rem;
+
+  @media screen and (max-width: ${(props) => props.theme.rules.md}) {
+    gap: 4rem;
+    img {
+      width: 100vw;
+      height: auto;
+      object-fit: contain;
+    }
+  }
 `;
 
 export const Content = styled.div`

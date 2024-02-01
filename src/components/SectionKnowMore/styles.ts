@@ -7,6 +7,10 @@ export const Container = styled.section`
   height: 874px;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: ${(props) => props.theme.rules.sm}) {
+    height: unset;
+    padding: 8rem 0;
+  }
 `;
 
 export const Content = styled.div`
@@ -67,7 +71,23 @@ export const Content = styled.div`
         transform: scale(1.05);
       }
       .button-content {
-        gap: 1.5rem;
+        gap: 0.8rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.sm}) {
+    flex-direction: column;
+    height: unset;
+
+    .item {
+      .description {
+        top: 30%;
+      }
+      &:hover {
+        .button-content {
+          gap: 1.5rem;
+        }
       }
     }
   }

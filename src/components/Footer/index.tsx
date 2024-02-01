@@ -19,7 +19,7 @@ import * as Styles from "./styles";
 
 const SignUpFormSchema = z.object({
   name: z.string().min(3),
-  phone: z.string(),
+  phone: z.string().min(11),
 
   message: z.string().min(5),
 });

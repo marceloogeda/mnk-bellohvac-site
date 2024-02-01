@@ -28,4 +28,23 @@ export const Container = styled.div`
       margin-top: 3rem;
     }
   }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.sm}) {
+    flex-direction: column;
+    height: unset;
+    padding: 4rem 3rem;
+    gap: 1rem;
+
+    br {
+      display: none;
+    }
+
+    .banner-image {
+      width: 100%;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
 `;

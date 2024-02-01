@@ -32,37 +32,6 @@ export function Hero() {
           <SwiperSlide>
             <Styles.HeroContainer>
               <div className="content">
-                <h1>
-                  Your Coolest <br /> Choice for HVAC
-                </h1>
-
-                <p>
-                  Where comfort meets cool business in Boston, MA and Charlotte,
-                  NC. <br />
-                  We re heating things up Sustainably with electric solutions!
-                </p>
-                <div className="button-group">
-                  <ButtonDefault content="Our services" />
-                  <ButtonDefault
-                    content="Schedule Service"
-                    hasStyleButtonType="outline"
-                    includeIcon
-                  />
-                </div>
-              </div>
-              <div className="banner-image">
-                <Image
-                  src={SectionBannerHero}
-                  alt=""
-                  width={571}
-                  height={710}
-                />
-              </div>
-            </Styles.HeroContainer>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Styles.HeroContainer>
-              <div className="content">
                 <h2>
                   Your Coolest <br /> Choice for HVAC
                 </h2>

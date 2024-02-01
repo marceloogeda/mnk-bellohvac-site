@@ -6,6 +6,9 @@ export const ContainerSectionSustainable = styled.section`
   align-items: center;
   justify-content: center;
   height: 592px;
+  @media screen and (max-width: ${(props) => props.theme.rules.md}) {
+    height: unset;
+  }
 `;
 
 export const Content = styled.div`
@@ -45,5 +48,12 @@ export const Content = styled.div`
       display: flex;
       gap: 1.5rem;
     }
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.md}) {
+    flex-direction: column-reverse;
+    height: unset;
+    padding: 8rem 0 0;
+    gap: 4rem;
   }
 `;

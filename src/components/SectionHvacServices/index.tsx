@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { ReactNode } from "react";
 
 // ? image
 import Image01 from "@/assets/images/svgs/choose-service.png";
@@ -7,13 +7,11 @@ import Image04 from "@/assets/images/svgs/installation.png";
 import Image02 from "@/assets/images/svgs/schedule.png";
 import Image03 from "@/assets/images/svgs/technical-visit.png";
 
-// ? styles
+// ? components
 import { ButtonDefault } from "../ButtonDefault";
-import * as Styles from "./styles";
 
-interface SectionHvacServicesProps {
-  children: ReactNode;
-}
+// ? styles
+import * as Styles from "./styles";
 
 export function SectionHvacServices() {
   return (

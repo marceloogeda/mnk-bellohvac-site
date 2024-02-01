@@ -17,6 +17,19 @@ export const Container = styled.div`
       border-radius: 100px;
     }
   }
+
+  @media screen and (max-width: ${(props) => props.theme.rules.xl}) {
+    .swiper-pagination-progressbar {
+      left: 0;
+      transform: translate(60px, 0);
+    }
+  }
+  @media screen and (max-width: ${(props) => props.theme.rules.sm}) {
+    .swiper-pagination-progressbar {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
 `;
 
 export const HeroContainer = styled.div`
